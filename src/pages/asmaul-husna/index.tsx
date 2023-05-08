@@ -12,7 +12,7 @@ export default function AsmaulHusna() {
       </div>
       <ListAsmaulHusna />
       <footer className="text-center py-4 text-gray-400 text-sm">
-        &copy; 2023 L RMN - Made with love in Bogor
+        &copy; 2023 L RMN - Made with ❤️ in Bogor
       </footer>
     </Layout>
   );
