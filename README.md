@@ -38,9 +38,3 @@ Jika kamu ingin melihat dan mengetes project ini lebih detail:
 ![quran](/public/docs/quran.png)
 
 ![asmaul husna](/public/docs/asmaul-husna.png)
-
-## 🗒️Credits
-
-Terima kasih udah menginspirasi saya :D
-
-https://quran-everything.vercel.app/
