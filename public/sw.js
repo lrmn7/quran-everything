@@ -1,94 +1,86 @@
 if (!self.define) {
   let e,
-    a = {};
-  const s = (s, c) => (
-    (s = new URL(s + ".js", c).href),
-    a[s] ||
-      new Promise((a) => {
+    s = {};
+  const a = (a, c) => (
+    (a = new URL(a + ".js", c).href),
+    s[a] ||
+      new Promise((s) => {
         if ("document" in self) {
           const e = document.createElement("script");
-          (e.src = s), (e.onload = a), document.head.appendChild(e);
-        } else (e = s), importScripts(s), a();
+          (e.src = a), (e.onload = s), document.head.appendChild(e);
+        } else (e = a), importScripts(a), s();
       }).then(() => {
-        let e = a[s];
-        if (!e) throw new Error(`Module ${s} didn’t register its module`);
+        let e = s[a];
+        if (!e) throw new Error(`Module ${a} didn’t register its module`);
         return e;
       })
   );
   self.define = (c, i) => {
     const n = e || ("document" in self ? document.currentScript.src : "") || location.href;
-    if (a[n]) return;
+    if (s[n]) return;
     let t = {};
-    const d = (e) => s(e, n),
+    const d = (e) => a(e, n),
       r = { module: { uri: n }, exports: t, require: d };
-    a[n] = Promise.all(c.map((e) => r[e] || d(e))).then((e) => (i(...e), t));
+    s[n] = Promise.all(c.map((e) => r[e] || d(e))).then((e) => (i(...e), t));
   };
 }
-define(["./workbox-80ca14c3"], function (e) {
+define(["./workbox-50de5c5d"], function (e) {
   "use strict";
   importScripts(),
     self.skipWaiting(),
     e.clientsClaim(),
     e.precacheAndRoute(
       [
+        { url: "/_next/static/chunks/104.d8592570e453ebc7.js", revision: "d8592570e453ebc7" },
+        { url: "/_next/static/chunks/109.d30413a3e1849de9.js", revision: "d30413a3e1849de9" },
+        { url: "/_next/static/chunks/239.279081504a75a547.js", revision: "279081504a75a547" },
+        { url: "/_next/static/chunks/24.dd0d660b9a923cfc.js", revision: "dd0d660b9a923cfc" },
+        { url: "/_next/static/chunks/509.2506e0a9deb3011e.js", revision: "2506e0a9deb3011e" },
+        { url: "/_next/static/chunks/675-dc766a7e9f7efb74.js", revision: "dc766a7e9f7efb74" },
+        { url: "/_next/static/chunks/685-d11f876e121c3362.js", revision: "d11f876e121c3362" },
+        { url: "/_next/static/chunks/856-5c6263a4750bb20e.js", revision: "5c6263a4750bb20e" },
+        { url: "/_next/static/chunks/899.cf3fdca6d56a0ec2.js", revision: "cf3fdca6d56a0ec2" },
+        { url: "/_next/static/chunks/framework-2c79e2a64abdb08b.js", revision: "2c79e2a64abdb08b" },
+        { url: "/_next/static/chunks/main-2bcbddbe07937d01.js", revision: "2bcbddbe07937d01" },
+        { url: "/_next/static/chunks/pages/404-863e8027e610e2f2.js", revision: "863e8027e610e2f2" },
+        { url: "/_next/static/chunks/pages/500-81b4c11b7626f9e0.js", revision: "81b4c11b7626f9e0" },
         {
-          url: "/_next/static/G6hr0F3bM_7pSyBs67928/_buildManifest.js",
-          revision: "4b0d502dfe239dcda58782d5f0e8ef11",
+          url: "/_next/static/chunks/pages/_app-0343bf88c4e5f281.js",
+          revision: "0343bf88c4e5f281",
         },
         {
-          url: "/_next/static/G6hr0F3bM_7pSyBs67928/_ssgManifest.js",
-          revision: "b6652df95db52feb4daf4eca35380933",
-        },
-        { url: "/_next/static/chunks/515.434bbe2840619db9.js", revision: "434bbe2840619db9" },
-        { url: "/_next/static/chunks/591-210c7beaae3dc99b.js", revision: "210c7beaae3dc99b" },
-        { url: "/_next/static/chunks/624-3533bec346a9a8dc.js", revision: "3533bec346a9a8dc" },
-        { url: "/_next/static/chunks/669.ba09c29ed25fcd92.js", revision: "ba09c29ed25fcd92" },
-        { url: "/_next/static/chunks/681.cf7206c1f915333f.js", revision: "cf7206c1f915333f" },
-        { url: "/_next/static/chunks/686.822ba465430a392a.js", revision: "822ba465430a392a" },
-        { url: "/_next/static/chunks/726.7036d96b28074e94.js", revision: "7036d96b28074e94" },
-        { url: "/_next/static/chunks/729-9f947f61e4d80a21.js", revision: "9f947f61e4d80a21" },
-        { url: "/_next/static/chunks/814.4125370a6a068a77.js", revision: "4125370a6a068a77" },
-        { url: "/_next/static/chunks/framework-ac88a2a245aea9ab.js", revision: "ac88a2a245aea9ab" },
-        { url: "/_next/static/chunks/main-7f7812915c823cda.js", revision: "7f7812915c823cda" },
-        { url: "/_next/static/chunks/pages/404-a0fc34310c099537.js", revision: "a0fc34310c099537" },
-        { url: "/_next/static/chunks/pages/500-14cb202d21cc4af5.js", revision: "14cb202d21cc4af5" },
-        {
-          url: "/_next/static/chunks/pages/_app-c28574207c1e9779.js",
-          revision: "c28574207c1e9779",
+          url: "/_next/static/chunks/pages/_error-54de1933a164a1ff.js",
+          revision: "54de1933a164a1ff",
         },
         {
-          url: "/_next/static/chunks/pages/_error-0544bf4e71b9e6be.js",
-          revision: "0544bf4e71b9e6be",
+          url: "/_next/static/chunks/pages/asmaul-husna-f7bfc628e2bde3fe.js",
+          revision: "f7bfc628e2bde3fe",
         },
         {
-          url: "/_next/static/chunks/pages/asmaul-husna-6ac511f32f257daf.js",
-          revision: "6ac511f32f257daf",
+          url: "/_next/static/chunks/pages/index-e78987f5e52579a4.js",
+          revision: "e78987f5e52579a4",
         },
         {
-          url: "/_next/static/chunks/pages/index-ecce07f31c86887c.js",
-          revision: "ecce07f31c86887c",
+          url: "/_next/static/chunks/pages/jadwal-sholat-1ade205c7120ce42.js",
+          revision: "1ade205c7120ce42",
         },
         {
-          url: "/_next/static/chunks/pages/jadwal-sholat-fc901591f1cdc0a0.js",
-          revision: "fc901591f1cdc0a0",
+          url: "/_next/static/chunks/pages/jadwal-sholat/kota/%5Bid%5D-87b91498b028504f.js",
+          revision: "87b91498b028504f",
         },
         {
-          url: "/_next/static/chunks/pages/jadwal-sholat/kota/%5Bid%5D-9f719ce2a3b644c5.js",
-          revision: "9f719ce2a3b644c5",
+          url: "/_next/static/chunks/pages/quran-71a2300ac95fe589.js",
+          revision: "71a2300ac95fe589",
         },
         {
-          url: "/_next/static/chunks/pages/quran-99f13b30723206ac.js",
-          revision: "99f13b30723206ac",
-        },
-        {
-          url: "/_next/static/chunks/pages/quran/surat/%5Bnumber%5D-363c08a8ae5c10aa.js",
-          revision: "363c08a8ae5c10aa",
+          url: "/_next/static/chunks/pages/quran/surat/%5Bnumber%5D-abb785a7eab9b169.js",
+          revision: "abb785a7eab9b169",
         },
         {
           url: "/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js",
           revision: "837c0df77fd5009c9e46d446188ecfd0",
         },
-        { url: "/_next/static/chunks/webpack-05e1d4bd6584dcb3.js", revision: "05e1d4bd6584dcb3" },
+        { url: "/_next/static/chunks/webpack-39e53c6873eb4709.js", revision: "39e53c6873eb4709" },
         { url: "/_next/static/css/100b5ed4f468583d.css", revision: "100b5ed4f468583d" },
         { url: "/_next/static/css/3c2ea2a062f0f917.css", revision: "3c2ea2a062f0f917" },
         {
@@ -147,6 +139,14 @@ define(["./workbox-80ca14c3"], function (e) {
           url: "/_next/static/media/f761c9ee3ad272d9-s.p.woff2",
           revision: "0ccb8ba8ba2297954fcf0d8bf52eca7e",
         },
+        {
+          url: "/_next/static/wipfhQTBo2F9JcfisoZR_/_buildManifest.js",
+          revision: "9fe20d9e75234b6dffcc98ade8d235a6",
+        },
+        {
+          url: "/_next/static/wipfhQTBo2F9JcfisoZR_/_ssgManifest.js",
+          revision: "b6652df95db52feb4daf4eca35380933",
+        },
         { url: "/docs/asmaul-husna.png", revision: "4e11e200b64f69ad3d46cda6fbcb6bb7" },
         { url: "/docs/home.png", revision: "f2f5e2dd8398f3ec3c31e4b2db0d67d3" },
         { url: "/docs/jadwal-sholat.png", revision: "b63db86509dcd7657f7281a15828f317" },
@@ -174,10 +174,10 @@ define(["./workbox-80ca14c3"], function (e) {
         cacheName: "start-url",
         plugins: [
           {
-            cacheWillUpdate: async ({ request: e, response: a, event: s, state: c }) =>
-              a && "opaqueredirect" === a.type
-                ? new Response(a.body, { status: 200, statusText: "OK", headers: a.headers })
-                : a,
+            cacheWillUpdate: async ({ request: e, response: s, event: a, state: c }) =>
+              s && "opaqueredirect" === s.type
+                ? new Response(s.body, { status: 200, statusText: "OK", headers: s.headers })
+                : s,
           },
         ],
       }),
@@ -280,8 +280,8 @@ define(["./workbox-80ca14c3"], function (e) {
     e.registerRoute(
       ({ url: e }) => {
         if (!(self.origin === e.origin)) return !1;
-        const a = e.pathname;
-        return !a.startsWith("/api/auth/") && !!a.startsWith("/api/");
+        const s = e.pathname;
+        return !s.startsWith("/api/auth/") && !!s.startsWith("/api/");
       },
       new e.NetworkFirst({
         cacheName: "apis",
