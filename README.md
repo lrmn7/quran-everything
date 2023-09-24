@@ -3,10 +3,6 @@
   <p>Adalah sebuah Website untuk mendapatkan jadwal sholat, Asma'ul Husna, juga membaca Al-Qur'an</p>
 </div>
 
-## PREVIEW
-
-[Quran-Everything](https://quran-everything.is-a.fun)
-
 ## 🗒Fitur
 
 - Jadwal sholat
