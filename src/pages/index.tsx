@@ -42,7 +42,7 @@ export default function Home() {
         </div>
         <footer className="mt-8 text-sm text-gray-400 hover:text-gray-600">
           <p>
-            &copy; 2023 <a href="https://lrmn.is-a.fun">L RMN</a> | Made with ❤️ in Bogor
+            &copy; 2023 <a href="https://lrmn.is-a.dev/">Made with ❤️ inBOGOR</a>
           </p>
         </footer>
       </div>

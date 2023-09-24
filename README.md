@@ -3,7 +3,8 @@
   <p>Adalah sebuah Website untuk mendapatkan jadwal sholat, Asma'ul Husna, juga membaca Al-Qur'an</p>
 </div>
 
-## PREVIEW 
+## PREVIEW
+
 [Quran-Everything](https://quran-everything.is-a.fun)
 
 ## 🗒Fitur
@@ -29,25 +30,3 @@ Jika kamu ingin melihat dan mengetes project ini lebih detail:
 - Clone project ini `git clone https://github.com/lrmn7/quran-everything.git`
 - Install dependencies dengan perintah `pnpm install`. Jika kamu memakai Package Manager yang lain, silahkan menyesuaikan dan jangan lupa untuk menghapus file `pnpm-lock.yaml`.
 - Selanjutnya, ketikkan perintah `pnpm run dev` dan lihat hasilnya di browser => `http://localhost:3000`
-
-## Support me
-
-- 👉 🇮🇩 [Trakteer](https://trakteer.id/lrmn) free access
-- 👉 🌍 [BuyMeACoffe](https://www.buymeacoffee.com/lrmn)
-- 👉 🌍 [Ko-Fi](https://ko-fi.com/lrmn7)
-
----
-
-## Screenshots
-
-![home](/public/docs/home.png)
-
-![jadwal sholat](/public/docs/jadwal-sholat.png)
-
-![puasa sunnah](/public/docs/puasa-sunnah.png)
-
-![quran](/public/docs/quran.png)
-
-![asmaul husna](/public/docs/asmaul-husna.png)
-
-Copyright © 2020 by [L RMN](https://is-a.fun/)

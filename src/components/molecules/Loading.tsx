@@ -8,9 +8,8 @@ export default function Loading() {
       </Head>
       <div className="flex min-h-screen items-center justify-center space-x-3 p-8 text-center">
         <p className="text-2xl font-bold">Loading...</p>
-        <p className="text-sm text-gray-500">Made with ❤️ by L RMN</p>
+        <p className="text-sm text-gray-500">Made with ❤️ by inBOGOR</p>
 
-        
         <div role="status">
           <svg
             aria-hidden="true"

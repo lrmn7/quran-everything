@@ -30,9 +30,8 @@ export default function Quran({ surat }: ListSuratProps) {
       </div>
       <ListSurat surat={surat} />
       <div className="flex items-center justify-center mt-5">
-        <p className="text-xs text-gray-400">&copy; 2023 L RMN - Made with ❤️ in Bogor</p>
+        <p className="text-xs text-gray-400">&copy; 2023 - Made with ❤️ inBOGOR</p>
       </div>
     </Layout>
   );
 }
-

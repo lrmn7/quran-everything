@@ -12,6 +12,9 @@ module.exports = withPWA({
   reactStrictMode: true,
   swcMinify: true,
   compress: true,
+  images: {
+    unoptimized: true,
+  },
   webpack(config) {
     config.plugins.push(new WindiCSSWebpackPlugin());
     return config;
